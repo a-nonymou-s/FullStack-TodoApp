@@ -5,10 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "nodemon app.js",
-    "build": "webpack",
-    "prod": "node dist/final.js",
-    "vercel-build": "echo hello"
+    "run": "nodemon app.js"
   },
   "author": "anony",
   "license": "ISC",
