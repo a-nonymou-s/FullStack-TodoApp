@@ -1,5 +1,6 @@
 const express = require('express'); 
 const mongoose = require('mongoose'); 
+const cors = require('cors');
 require('dotenv').config(); 
 const Todo = require('./models/Todo');
 
@@ -7,7 +8,7 @@ const Todo = require('./models/Todo');
 const app = express(); 
 
 app.use(express.json()); 
-
+app.use(cors());
 const port = 4001; 
 
 const connectionString = process.env.MONGO_URI; 
